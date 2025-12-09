@@ -1,0 +1,241 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+/* BAGIAN HEADER */
+
+header {
+    background: #1f2937;
+    padding-bottom: 100px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Memberikan padding horizontal yang konsisten dengan hero section */
+    padding: 20px 150px;
+    max-width: 1200px; /* Opsional: Batas lebar konten */
+    margin: 0 auto;
+}
+
+.header-container h1 {
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+.menu-container ul {
+    display: flex;
+    gap: 20px;
+}
+
+ul li {
+    list-style: none;
+}
+
+li a {
+    color: #e5e7eb;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+
+/* HERO SECTION */
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 150px 0; /* Jarak atas/bawah dan samping */
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-left-section {
+    flex: 1; /* Ambil proporsi ruang yang sama dengan kanan */
+    max-width: 450px; /* Membatasi lebar teks seperti di gambar */
+}
+
+.hero-left-section h2 {
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+
+.hero-left-text {
+    color: #e5e7eb;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.hero-left-section button {
+    background: #3882f6;
+    border: none;
+    color: #f9faf8;
+    font-size: 16px;
+    padding: 8px 40px;
+    border-radius: 8px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.hero-right-section {
+    flex: 1;
+    /* background-color: darkgray; */
+    min-height: 250px; /* Tinggi minimum untuk kotak gambar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-right-section img {
+    min-height: 250px;
+}
+
+/* main section */
+.main-container {
+    padding: 50px 0px;
+    text-align: center;
+}
+
+.main-container h2 {
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+
+/* 1. Mengaktifkan Flexbox untuk Tata Letak Horizontal */
+.info-items-container{
+    display: flex; /* Mengatur item agar berjejer horizontal */
+    justify-content: center; /* Memposisikan item di tengah kontainer */
+    gap: 50px; /* Jarak antar kolom (item) */
+    max-width: 1000px; /* Batasi lebar kontainer utama */
+    margin: 0 auto; /* Pusatkan kontainer pada halaman */
+    flex-wrap: wrap;
+}
+
+/* 2. Styling Setiap Item Konten */
+.main-content {
+  /* Setiap item akan mengambil porsi yang sama */
+    width: 160px; /* Batasan lebar agar tidak terlalu besar */
+    text-align: center;
+}
+
+/* styling kotak biru */
+.illustration-box img {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #3882f6;
+    border-radius: 8px;
+    margin: 0 auto 10px;
+    border: none;
+}
+
+/* styling teks */
+.main-text{
+    font-size: 16px;
+    max-width: 150px;
+    margin: 0 auto;
+    color: #1f2937;
+}
+
+
+/* QUOTE SECTION */
+article {
+    background-color: #e5e7eb;
+    margin: 50px 0;
+}
+
+.quote-container {
+    text-align: center;
+    margin: 0 auto;
+    padding: 100px 20px;
+    max-width: 800px;
+}
+
+.quote-container p {
+    font-size: 36px;
+    font-style: italic;
+    text-align: left;
+    color: #1f2937;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.quote-container h3 {
+    text-align: right;
+    padding-top: 10px;
+    margin-right: 40px;
+}
+
+
+/* CTA SECTION */
+
+.cta-section{
+    background: #3882f6;
+    max-width: 1000px;
+    margin: 75px auto;
+    border: none;
+    border-radius: 10px;
+}
+
+.cta-container {
+    display: flex;
+    justify-content: space-between; /* Untuk mendorong teks dan tombol ke ujung */
+    align-items: center; 
+    padding: 40px 100px; /* Tambah padding horizontal untuk ruang di dalam kotak biru */
+    gap: 20px; /* Memberikan jarak antar elemen di dalamnya */
+}
+
+.cta-text {
+    flex: 1;
+    flex-shrink: 1; /* Mencegah teks terlalu memaksakan ruang jika layar kecil */
+    max-width: 600px;
+}
+
+.cta-text-one {
+    font-size: 20px;
+    font-weight: 700;
+    color: #e5e7eb;
+    margin-bottom: 5px;
+}
+
+.cta-text-two {
+    color: #f9faf8;
+    margin-top: 0;
+}
+
+.cta-button {
+    color: #e5e7eb;
+    padding: 8px 32px;
+    background: transparent;
+    border: 2px solid #f9faf8;
+    border-radius: 5px;
+    flex-shrink: 0; /* Memastikan tombol tidak mengecil */
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #1f2937;
+}
+
+.footer-text {
+    color: #f9faf8;
+    text-align: center;
+    padding: 30px 0;
+}
+
+
